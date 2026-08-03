@@ -15,7 +15,7 @@ A frontend clone of Zomato's homepage built using **HTML5** and **CSS3** — no 
 - Font Awesome Icons
 
 ## 📸 Preview
-*(add a screenshot or GIF here — this is what gets people to actually click into your repo)*
+![Preview](./preview.png)
 
 ## 🚀 Getting Started
 1. Clone the repo
