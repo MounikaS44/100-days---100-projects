@@ -25,11 +25,7 @@ Built a **mini e-commerce style landing page** featuring:
 ---
 
 ### 📸 Preview
-Desktop View
-<p align="center"> <img src="assets/preview-desktop.png" alt="Desktop Preview" width="900"> </p>
-
-Mobile View
-<p align="center"> <img src="assets/preview-mobile.png" alt="Mobile Preview" width="300"> </p>
+![Preview](./petale-pricing cards.mp4)
 
 ---
 
