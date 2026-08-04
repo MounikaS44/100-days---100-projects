@@ -25,13 +25,13 @@ Built a **mini e-commerce style landing page** featuring:
 ---
 
 ### 📸 Preview
-![Preview](./petale-pricing cards.mp4)
+![Preview](./preview.mp4)
 
 ---
 
 ### 🚀 Live Demo
 
-🔗 Live Website: Add your deployed link here
+🔗 Live Website: https://petale-mini.netlify.app/
 
 ---
 
