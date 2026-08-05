@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Day 5 - Image Gallery with Lightbox</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="header">
+    <h1>🖼️ Pixel & Palette - My Creative Gallery 🎨</h1>
+    <p>Click any image to open it in the lightbox</p>
+  </header>
+
+  <main class="gallery" id="gallery">
+    <img src="https://i.pinimg.com/736x/19/5d/fb/195dfb3e2cb265a02c698cb8c26349ce.jpg" alt="Oil Pastel art" class="gallery-img">
+    <img src="https://i.pinimg.com/736x/f9/f2/75/f9f2754037ba421d955551050ebf20f8.jpg" alt="Pengu Pixel art" class="gallery-img">
+    <img src="https://i.pinimg.com/736x/f7/71/03/f77103b7c3b87800d8845cf21faf2c8a.jpg" alt="Shinchan Water art" class="gallery-img">
+    <img src="https://i.pinimg.com/736x/2a/95/42/2a9542f13c6d1e9fdd710004f26b2243.jpg" alt="Pencil art" class="gallery-img">
+    
+    <img src="https://i.pinimg.com/1200x/f1/86/27/f18627507742f75f4787d4aa05936f0f.jpg" alt="Doodle art" class="gallery-img">
+    <img src="https://i.pinimg.com/736x/38/e8/60/38e8604a093ceff44ec03628333ee515.jpg" alt="Mandala art" class="gallery-img">
+    <img src="https://i.pinimg.com/736x/cd/61/3d/cd613d9b96c810fdace4ca8f93c03d34.jpg" alt="Cat Canvas art" class="gallery-img">
+    <img src="https://i.pinimg.com/736x/8c/2e/e9/8c2ee96d4b9a272900350c36cb39dcfa.jpg" alt="Clay art" class="gallery-img">
+    
+    <img src="https://i.pinimg.com/1200x/54/bb/44/54bb441120f41de32177649f272084b6.jpg" alt="Wall art" class="gallery-img">
+    <img src="https://i.pinimg.com/736x/39/65/99/396599c4133b03032cd4cd2b155cbcb6.jpg" alt="Canva art" class="gallery-img">
+    <img src="https://i.pinimg.com/736x/63/03/c1/6303c1b45e8849dee617258c51cc47af.jpg" alt="Texture art" class="gallery-img">
+    <img src="https://i.pinimg.com/1200x/c0/6b/1c/c06b1c33913556c8308a28495da95cfb.jpg" alt="Canva art" class="gallery-img">
+  </main>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox">
+    <span class="close-btn" id="closeBtn">&times;</span>
+    <span class="nav-btn prev-btn" id="prevBtn">&#10094;</span>
+    <img src="" alt="" class="lightbox-img" id="lightboxImg">
+    <span class="nav-btn next-btn" id="nextBtn">&#10095;</span>
+    <div class="counter" id="counter"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
