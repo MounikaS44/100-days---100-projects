@@ -19,6 +19,17 @@ A responsive image gallery with a fully interactive lightbox — click any image
 
 ---
 
+### 📸 Preview
+![Preview](./preview.mp4)
+
+---
+
+### 🚀 Live Demo
+
+🔗 Live Website: https://100-days-100-projects.vercel.app/
+
+---
+
 ## 🛠️ Tech Stack
 
 | Layer | Tech |
