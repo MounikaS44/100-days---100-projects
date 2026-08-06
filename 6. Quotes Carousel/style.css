@@ -1,0 +1,239 @@
+:root{
+  --void: #05060D;
+  --deep: #0B0E22;
+  --panel: rgba(232, 236, 251, 0.06);
+  --panel-border: rgba(232, 236, 251, 0.14);
+  --text: #E8ECFB;
+  --muted: #8D94BE;
+  --gold: #F5C77E;
+  --eyebrow-color: #9FD8FF;
+  --name-color: #E893C7;
+  --aurora-a: #6EE7B7;
+  --aurora-b: #A78BFA;
+
+  /* original trio */
+  --earth: #6EE7B7;
+  --sky: #7DB8F0;
+  --universe: #C69CF5;
+
+  /* new yellow-orange family for the added themes — spaced further apart across the hue range so each is easy to tell apart */
+  --stars: #FFD23F;
+  --cloud: #FFB100;
+  --moon: #FF8800;
+  --sun: #FF4E00;
+}
+
+*{ box-sizing: border-box; }
+
+html, body{ height: 100%; }
+
+body{
+  margin:0;
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background: radial-gradient(ellipse at 50% -10%, var(--deep) 0%, var(--void) 65%);
+  font-family:'Space Grotesk', sans-serif;
+  color: var(--text);
+  padding: 48px 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+canvas#stars{
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+}
+
+.wrap{
+  position: relative;
+  z-index: 2;
+  width:100%;
+  max-width: 620px;
+  text-align:center;
+}
+
+.eyebrow{
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  font-size: 11.5px;
+  color: var(--eyebrow-color);
+  margin: 0 0 12px;
+  font-weight: 500;
+}
+
+h1{
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 600;
+  font-size: clamp(30px, 5.5vw, 44px);
+  margin: 0 0 44px;
+  background: linear-gradient(120deg, var(--text) 40%, var(--aurora-b) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* --- Carousel stage --- */
+.stage{
+  position: relative;
+  height: 340px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  perspective: 1200px;
+}
+
+.card{
+  position:absolute;
+  width: 480px;
+  max-width: 90vw;
+  background: var(--panel);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  border: 1px solid var(--panel-border);
+  border-radius: 18px;
+  padding: 44px 40px 34px;
+  box-shadow: 0 30px 60px -20px rgba(0,0,0,0.6);
+  text-align: center;
+  opacity: 0;
+  transform: translateY(30px) scale(0.94);
+  transition: transform 0.6s cubic-bezier(.2,.8,.2,1), opacity 0.5s ease;
+  pointer-events: none;
+}
+
+.card.active{
+  opacity: 1;
+  transform: translateY(0) scale(1);
+  pointer-events: auto;
+  z-index: 3;
+}
+
+.card.prev{
+  opacity: 0.35;
+  transform: translateY(14px) translateX(-46px) scale(0.88);
+  z-index: 1;
+}
+
+.card.next{
+  opacity: 0.35;
+  transform: translateY(14px) translateX(46px) scale(0.88);
+  z-index: 1;
+}
+
+/* gradient rim - signature element, a thin aurora arc along the top edge */
+.card::before{
+  content:"";
+  position:absolute;
+  top:-1px; left: 14%; right: 14%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--aurora-a), var(--gold), var(--aurora-b), transparent);
+  border-radius: 2px;
+  opacity: 0.9;
+}
+
+.badge{
+  display:inline-flex;
+  align-items:center;
+  gap: 7px;
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 22px;
+}
+
+.badge .dot{
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  box-shadow: 0 0 10px 1px currentColor;
+}
+
+.quote{
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 27px;
+  line-height: 1.45;
+  margin: 0 0 26px;
+  color: var(--text);
+}
+
+.attribution{
+  font-size: 13.5px;
+  color: var(--muted);
+  letter-spacing: 0.02em;
+}
+.attribution .name{
+  color: var(--name-color);
+  font-weight: 600;
+}
+
+/* --- Controls --- */
+.controls{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap: 24px;
+  margin-top: 38px;
+}
+
+.nav-btn{
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  border: 1px solid var(--panel-border);
+  background: var(--panel);
+  backdrop-filter: blur(10px);
+  color: var(--text);
+  cursor: pointer;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+}
+.nav-btn:hover{
+  border-color: var(--gold);
+  box-shadow: 0 0 18px -4px var(--gold);
+}
+.nav-btn:active{ transform: scale(0.9); }
+.nav-btn svg{ width: 17px; height: 17px; }
+.nav-btn:focus-visible{ outline: 2px solid var(--gold); outline-offset: 3px; }
+
+/* orbit dots — tiny planets circling an implied sun */
+.orbit{
+  display:flex;
+  align-items:center;
+  gap: 12px;
+}
+.dot-btn{
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: var(--muted);
+  opacity: 0.45;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  transition: opacity 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+.dot-btn.active{
+  opacity: 1;
+  background: var(--gold);
+  box-shadow: 0 0 12px 2px rgba(245, 199, 126, 0.6);
+  transform: scale(1.25);
+}
+.dot-btn:focus-visible{ outline: 2px solid var(--gold); outline-offset: 3px; }
+
+@media (prefers-reduced-motion: reduce){
+  .card{ transition: opacity 0.3s ease; }
+  .nav-btn:active{ transform: none; }
+}
+
+@media (max-width: 480px){
+  .stage{ height: 400px; }
+  .card{ padding: 34px 26px 28px; }
+  .quote{ font-size: 22px; }
+}
