@@ -1,0 +1,49 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#bg{
+    background-color: lavenderblush;
+    margin: 10px;
+}
+
+.bg-body-tertiary{
+background-image: url('https://i.pinimg.com/1200x/fc/c8/ce/fcc8ce70e9836bbf572542601a80dae9.jpg');
+    object-fit: contain;
+    border-bottom: 2px solid black;
+    
+}
+
+.btn-outline-secondary:hover{
+    background-color:lavenderblush;
+    color: black;
+}
+
+.btn-outline-secondary:focus{
+    background-color: lavenderblush;
+}
+
+.card-img-top{
+    height: 350px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.carousel{
+    width: 100%;
+    max-width: 900px;
+    overflow: hidden;
+    border-radius: 25px;
+    box-shadow: 3px 10px 20px rgb(253, 152, 169);
+}
+
+.carousel img{
+    height: 60vw;
+    max-height: 500px;
+    width: 100%;
+    border-radius: 25px;
+    border: 2px solid peachpuff;
+    object-fit: cover;
+}

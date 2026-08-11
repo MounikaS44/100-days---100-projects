@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pintersty Carousel</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Section -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+            <img src="logo.png" alt="Logo" class="d-inline-block align-text-center" style="height: 50px; width: auto;">
+            Pinteresty Carousel
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navContent">
+            <div class="sign d-flex flex-column flex-lg-row gap-2 ms-lg-auto mt-3 mt-lg-0">
+                <button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#signInModal">Sign-In</button>
+                <button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#signUpModal">Sign-Up</button>
+            </div>
+            </div>
+        </div>
+    </nav>
+
+    <div id="bg" class="m-0">
+
+    <!-- Carousel Section -->
+
+    <section class="container py-5 d-flex justify-content-center">
+        
+            <div id="carouselExampleIndicators" class="carousel slide carouselExampleAutoplaying" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://i.pinimg.com/736x/a9/54/de/a954de6f343584e149f0066115016bb0.jpg" class="d-block w-100" alt="Carousel Image 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://i.pinimg.com/736x/e4/2a/ad/e42aaded4485e6cc0bedd85e502588fd.jpg" class="d-block w-100" alt="Carousel Image 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://i.pinimg.com/736x/84/a2/1f/84a21fa2168ce0b343259eaef782e259.jpg" class="d-block w-100" alt="Carousel Image 3">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        
+    </section>
+
+    <!-- Card section -->
+
+    <section class="container my-5">
+        <div class="row g-4 justify-content-center">
+
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="card h-100">
+                    <img src="https://i.pinimg.com/736x/f9/e6/78/f9e678b83f1bfbb9f7de814038a12e74.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">🪞 Cozy Bunny Mirror</h5>
+                        <p class="card-text">Add charm to your room with this pastel pink-and-white bunny-shaped mirror, complete with adorable ears and paws.</p>
+                        <a href="#" class="btn btn-primary">Explore more</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="card h-100">
+                    <img src="https://i.pinimg.com/736x/56/bd/ef/56bdef043983d9a944b33a567d687272.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">📚 Blush Scallop Shelf</h5>
+                        <p class="card-text">A stylish pastel shelf with scalloped edges, ideal for displaying books, plants, or lamps while adding a warm touch to your decor.</p>
+                        <a href="#" class="btn btn-primary">Explore more</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="card h-100">
+                    <img src="https://i.pinimg.com/736x/56/d9/79/56d9799a43266707acc0be3cb9c74962.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">☕ Sweetheart Mug Stand</h5>
+                        <p class="card-text">Showcase your collection of pastel mugs with this compact white shelf, designed for cute cups featuring bows, hearts, and animal faces.</p>
+                        <a href="#" class="btn btn-primary">Explore more</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="card h-100">
+                    <img src="https://i.pinimg.com/1200x/b7/b6/bf/b7b6bff9ab6f774511025bca4a093ef7.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">🐧 Snuggle Penguin Seat</h5>
+                        <p class="card-text">A cozy penguin-shaped chair that doubles as a bean bag, perfect for curling up with a blanket and lamp in your favorite corner.</p>
+                        <a href="#" class="btn btn-primary">Explore more</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    
+    <!-- SignIn Form Modal-->
+
+    <section>
+
+            <!-- Modal -->
+            <div class="modal fade" id="signInModal" tabindex="-1" aria-labelledby="signInLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Sign-In</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="mb-2">
+                                    <label class="form-label">Email</label>
+                                    <input type="email" class="form-control" placeholder="Enter your email">
+                                </div>
+                                <div class="mb-2">
+                                    <label class="form-label">Password</label>
+                                    <input type="password" class="form-control" placeholder="Enter your password">
+                                </div>
+                                <div class="text-center">
+                                    <button type="submit" class="btn btn-secondary">Sign-In</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+    </section>
+
+    <!-- SignUp Form Modal-->
+
+    <section>
+
+    <!-- Modal -->
+            <div class="modal fade" id="signUpModal" tabindex="-1" aria-labelledby="signUpLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Sign-Up</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="mb-2">
+                                    <label class="form-label">First Name</label>
+                                    <input type="text" class="form-control" placeholder="Enter your First Name">
+                                </div>
+                                <div class="mb-2">
+                                    <label class="form-label">Last Name</label>
+                                    <input type="text" class="form-control" placeholder="Enter your Last Name">
+                                </div>
+                                <div class="mb-2">
+                                    <label class="form-label">Email</label>
+                                    <input type="email" class="form-control" placeholder="Enter your email">
+                                </div>
+                                <div class="mb-2">
+                                    <label class="form-label">Password</label>
+                                    <input type="password" class="form-control" placeholder="Enter your password">
+                                </div>
+                                <div class="text-center">
+                                    <button type="submit" class="btn btn-secondary">Sign-Up</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    
+
+    
+
+
+
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
