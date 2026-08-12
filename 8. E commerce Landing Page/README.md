@@ -23,7 +23,7 @@ This project showcases a modern ecommerce landing page UI featuring a responsive
 
 ## 📸 Preview
 
-*(Add a screenshot or GIF of your landing page here)*
+[![Watch the demo](preview.mp4)
 
 ---
 
