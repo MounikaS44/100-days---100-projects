@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <script src="https://kit.fontawesome.com/cf73954ac0.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+            margin: 0;
+        }
+
+        ul {
+            background: linear-gradient(to top right, #87CEEB, #6495ED, #4169E1);
+            color: rgb(0, 0, 0);
+            display: flex;
+            font-size: 18px;
+            list-style-type: none;
+            padding: 20px;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        ul:hover{
+            cursor: pointer;
+            text-shadow: 5px 5px 13px rgb(239, 234, 234);
+        }
+
+
+        input{
+            border-top-left-radius: 15px;
+            border-bottom-left-radius: 15px;
+        }
+
+        input,
+        .btn-1 {
+            padding: 10px;
+            border: none;
+    
+        }
+
+        .btn-1 {
+            position: relative;
+            right: 6px;
+            background-color: #87CEEB;
+            border: none;
+            border-top-right-radius: 15px;
+            border-bottom-right-radius: 15px;
+        }
+
+        input:focus {
+            outline: none;
+        }
+
+        .btn-1:hover {
+            background-color: rgb(255, 254, 253);
+            color: rgb(7, 7, 7);
+            cursor: pointer;
+        }
+
+        .card {
+            width: 250px;
+            height: 400px;
+            border: 2px solid gray;
+            line-height: 25px;
+            border-radius: 10px;
+            text-align: center;
+            overflow: hidden;
+            margin: 25px;
+            transition: 3s ease;
+            box-shadow: 3px 10px 20px rgb(107, 106, 106);
+
+        }
+
+        .card:hover {
+            cursor: pointer;
+            box-shadow: 3px 10px 20px rgb(107, 106, 106);
+        }
+
+        img {
+            width: 100%;
+            height: 300px;
+            border-radius: 6px;
+            object-fit: cover;
+
+        }
+
+        .heading {
+            font-size: 20px;
+            font-weight: 700;
+        }
+
+        .card-btn {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            background-color: #4169E1;
+            color: rgb(37, 35, 35);
+            border: none;
+            /* overflow: hidden; */
+        }
+
+        .card-btn:hover {
+            cursor: pointer;
+        }
+        
+        .container{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li>HOME</li>
+        <li>ABOUT</li>
+        <li>SERVICES</li>
+        <li>CONTACT US</li>
+        <li>REGISTER</li>
+        <li>LOGIN</li>
+        <div>
+            <input type="text" placeholder="Search here...">
+            <button class="btn-1"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+    </ul>
+
+    <div class="container">
+        <div class="card">
+            <img src="https://i.pinimg.com/1200x/6c/94/63/6c946398e0408da0bec0fa451d72a294.jpg"
+                alt="1">
+            <span class="heading"> Rainbow Sip Cups </span><br>
+            <span class="heading">Price:</span> 599/- <br>
+            <!-- <span class="heading">Desc:</span> Value for money <br> -->
+            <!-- <span class="heading">Rating:</span> 8.9 <br> -->
+            <button class="card-btn">ADD TO CART</button>
+        </div>
+
+        <div class="card">
+            <img src="https://i.pinimg.com/736x/b8/d7/d5/b8d7d5ac58b368c8cf4bd9d43f52b085.jpg"
+                alt="2">
+            <span class="heading">Pastel Harmony Plates</span><br>
+            <span class="heading">Price:</span> 899/- <br>
+            <!-- <span class="heading">Desc:</span> Value for money <br> -->
+            <!-- <span class="heading">Rating:</span> 8.9 <br> -->
+            <button class="card-btn">ADD TO CART</button>
+        </div>
+
+        <div class="card">
+            <img src="https://i.pinimg.com/1200x/7b/35/1d/7b351d7374cbb1484b84a3afecfe0a18.jpg"
+                alt="3">
+            <span class="heading">Cozy Clay Mugs</span><br>
+            <span class="heading">Price:</span> 499/- <br>
+            <!-- <span class="heading">Desc:</span> Value for money <br> -->
+            <!-- <span class="heading">Rating:</span> 8.9 <br> -->
+            <button class="card-btn">ADD TO CART</button>
+        </div>
+
+        <div class="card">
+            <img src="https://i.pinimg.com/1200x/f3/0a/92/f30a925c3ac065aee5aa6b4a3751bd87.jpg"
+                alt="4">
+            <span class="heading">Whimsical Critter Bowls</span> <br>
+            <span class="heading">Price:</span> 749/- <br>
+            <!-- <span class="heading">Desc:</span> Value for money <br> -->
+            <!-- <span class="heading">Rating:</span> 8.9 <br> -->
+            <button class="card-btn">ADD TO CART</button>
+        </div>
+
+        <div class="card">
+            <img src="https://i.pinimg.com/736x/35/e3/eb/35e3ebc11de4c278df7dec792a150b14.jpg"
+                alt="5">
+            <span class="heading">Sunny Day Organizer</span> <br>
+            <span class="heading">Price:</span> 1,299/- <br>
+            <!-- <span class="heading">Desc:</span> Value for money <br> -->
+            <!-- <span class="heading">Rating:</span> 8.9 <br> -->
+            <button class="card-btn">ADD TO CART</button>
+        </div>
+
+        <div class="card">
+            <img src="https://i.pinimg.com/736x/32/a1/e0/32a1e0c435c9f74b2f2484dae74bb4ef.jpg"
+                alt="6">
+            <span class="heading">Forest Charm Planter</span> <br>
+            <span class="heading">Price:</span> 999/- <br>
+            <!-- <span class="heading">Desc:</span> Value for money <br> -->
+            <!-- <span class="heading">Rating:</span> 8.9 <br> -->
+            <button class="card-btn">ADD TO CART</button>
+        </div>
+
+        <div class="card">
+            <img src="https://i.pinimg.com/736x/82/ee/a0/82eea0bae04bddcc565bd0827edee38f.jpg"
+                alt="7">
+            <span class="heading">Glow Nest Holders</span><br>
+            <span class="heading">Price:</span> 699/- <br>
+            <!-- <span class="heading">Desc:</span> Value for money <br> -->
+            <!-- <span class="heading">Rating:</span> 8.9 <br> -->
+            <button class="card-btn">ADD TO CART</button>
+        </div>
+
+        <div class="card">
+            <img src="https://i.pinimg.com/736x/6d/6b/79/6d6b796a76db3dd55631b184167dcf05.jpg"
+                alt="8">
+            <span class="heading">Lavender Bloom Vase</span><br>
+            <span class="heading">Price:</span> 1,199/- <br>
+            <!-- <span class="heading">Desc:</span> Value for money <br> -->
+            <!-- <span class="heading">Rating:</span> 8.9 <br> -->
+            <button class="card-btn">ADD TO CART</button>
+        </div>
+    </div>
+
+</body>
+
+</html>
