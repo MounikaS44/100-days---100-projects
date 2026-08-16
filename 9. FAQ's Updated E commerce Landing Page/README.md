@@ -25,6 +25,12 @@ This project adds an interactive FAQ accordion to an existing e-commerce landing
 
 ---
 
+## 🔗 Live
+
+https://faq-updated-ecommercelandingpage.vercel.app/
+
+---
+
 ## 📸 Preview
 
 ![Watch the demo](preview.gif)
