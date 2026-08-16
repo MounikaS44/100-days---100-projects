@@ -1,12 +1,12 @@
-# 🏺 Ceramic Store — Ecommerce Landing Page
-
-A clean, aesthetic landing page for a ceramic products ecommerce store, built as part of my **#100Days100Projects** challenge.
+# Day 9/100 — FAQ Accordion (E-Commerce Landing Page)
+ 
+Part of my **#100Days100Projects** challenge — a collapsible FAQ section built and integrated into a ceramic-ware e-commerce landing page.
 
 ---
 
-## 📌 Overview
-
-This project showcases a modern ecommerce landing page UI featuring a responsive navbar, search functionality, and a product showcase section for handcrafted ceramic items.
+## 🔍 Overview
+ 
+This project adds an interactive FAQ accordion to an existing e-commerce landing page. Users can click a question to reveal its answer, with only one answer open at a time and a smooth expand/collapse animation.
 
 ---
 
@@ -18,6 +18,10 @@ This project showcases a modern ecommerce landing page UI featuring a responsive
   - Product image
   - Price
   - "Add to Cart" button
+- **Accordion-style FAQ (one item open at a time)
+- **Smooth `max-height` transition animation
+- **Rotating "+" icon on open/close
+- **Keyboard accessible (`<button>` elements, `aria-expanded` updates)
 
 ---
 
@@ -27,10 +31,13 @@ This project showcases a modern ecommerce landing page UI featuring a responsive
 
 ---
 
-## 📅 Challenge Progress
+## 🔗 Part of
 
-This is **Day 8** of my **100 Days 100 Projects** challenge — building one project every day to sharpen my frontend development skills.
+[#100Days100Projects](#) — building one small web project a day to sharpen my frontend development skills.
+
+---
 
 ## 🤝 Connect
+ 
+⭐ If you found this useful, consider starring the repo!
 
-Feel free to connect, share feedback, or suggest improvements!
