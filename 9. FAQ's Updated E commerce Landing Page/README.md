@@ -10,7 +10,7 @@ This project adds an interactive FAQ accordion to an existing e-commerce landing
 
 ---
 
-## ✨ Features
+## ✨ Features 
 
 - **Navbar** — Home, About, Services, Contact Us, Register, Login
 - **Search bar** with search button for quick product lookup
