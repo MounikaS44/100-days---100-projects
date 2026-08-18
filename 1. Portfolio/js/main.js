@@ -129,7 +129,7 @@
 document.getElementById('contactForm').addEventListener('submit', function (e) {
     e.preventDefault();
 
-    var GOOGLE_FORM_URL = 'https://docs.google.com/forms/d/e/1FAIpQLScK0w9HFKRt-UzzFmvPP_t6QigfIvuaRX-LJjmrcKPjRu3eoQ/viewform?usp=publish-editor';
+    var GOOGLE_FORM_URL = 'https://docs.google.com/forms/d/e/1FAIpQLScK0w9HFKRt-UzzFmvPP_t6QigfIvuaRX-LJjmrcKPjRu3eoQ/viewform?usp=dialog';
 
     var formData = new FormData();
     formData.append('entry.2005620554', document.getElementById('name').value);   
