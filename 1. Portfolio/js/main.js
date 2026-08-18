@@ -129,16 +129,16 @@
 document.getElementById('contactForm').addEventListener('submit', function (e) {
     e.preventDefault();
 
-    var GOOGLE_FORM_URL = 'https://docs.google.com/forms/d/e/1FAIpQLScK0w9HFKRt-UzzFmvPP_t6QigfIvuaRX-LJjmrcKPjRu3eoQ/formResponse';
+    const GOOGLE_FORM_URL =
+  "https://docs.google.com/forms/d/e/1FAIpQLScK0w9HFKRt-UzzFmvPP_t6QigfIvuaRX-LJjmrcKPjRu3eoQ/formResponse";
 
 
 
     var formData = new FormData();
-    formData.append('entry.2005620554', document.getElementById('name').value);   
-    formData.append('entry.1045781291', document.getElementById('email').value);  
-    formData.append('entry.1065046570', document.getElementById('subject').value); 
-    formData.append('entry.1166974658', document.getElementById('message').value); 
-
+        formData.append('entry.2005620554', document.getElementById('name').value);
+        formData.append('entry.1045781291', document.getElementById('email').value);
+        formData.append('entry.1065046570', document.getElementById('subject').value);
+        formData.append('entry.1166974658', document.getElementById('message').value);
     fetch(GOOGLE_FORM_URL, {
         method: 'POST',
         mode: 'no-cors',
