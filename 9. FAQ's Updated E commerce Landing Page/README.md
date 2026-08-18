@@ -18,10 +18,10 @@ This project adds an interactive FAQ accordion to an existing e-commerce landing
   - Product image
   - Price
   - "Add to Cart" button
-- **Accordion-style FAQ (one item open at a time)
-- **Smooth `max-height` transition animation
-- **Rotating "+" icon on open/close
-- **Keyboard accessible (`<button>` elements, `aria-expanded` updates)
+- **Accordion-style FAQ** (one item open at a time)
+- **Smooth** `max-height` transition animation
+- **Rotating** "+" icon on open/close
+- **Keyboard accessible** (`<button>` elements, `aria-expanded` updates)
 
 ---
 
