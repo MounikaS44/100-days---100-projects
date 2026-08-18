@@ -38,10 +38,9 @@ A responsive, Pinterest-inspired product showcase page built with **Bootstrap 5*
 
 ## 📸 Preview
 
-![Preview](./preview.mp4)
+![Preview](./preview.gif)
 
 
 ---
-
 
 ⭐ If you liked this project, consider giving it a star — it motivates me to keep building!
