@@ -10,7 +10,7 @@ This project showcases a modern ecommerce landing page UI featuring a responsive
 
 ---
 
-## ✨ Features
+## ✨ Features 
 
 - **Navbar** — Home, About, Services, Contact Us, Register, Login
 - **Search bar** with search button for quick product lookup
