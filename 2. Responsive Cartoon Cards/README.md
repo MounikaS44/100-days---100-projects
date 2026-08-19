@@ -17,7 +17,7 @@ A fully responsive cartoon character card gallery built with pure CSS Grid — n
 
 ## 🔗 Live
 
-https://faq-updated-ecommercelandingpage.vercel.app/
+[(https://responsive-cards-in-my-cartoon-era.vercel.app/)]
 
 ---
 
