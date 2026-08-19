@@ -20,7 +20,7 @@ A responsive image gallery with a fully interactive lightbox — click any image
 ---
 
 ### 📸 Preview
-![Preview](./preview.mp4)
+![Preview](./preview.gif)
 
 ---
 
