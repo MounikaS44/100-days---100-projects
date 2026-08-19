@@ -25,13 +25,13 @@ Built a **mini e-commerce style landing page** featuring:
 ---
 
 ### 📸 Preview
-![Preview](./preview.mp4)
+![Preview](./preview.gif)
 
 ---
 
 ### 🚀 Live Demo
 
-🔗 Live Website: https://petale-mini.netlify.app/
+🔗 Live Website: https://petale-mini-ecommerce-landingpage.vercel.app/
 
 ---
 
