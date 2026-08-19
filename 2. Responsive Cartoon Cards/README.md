@@ -1,41 +1,51 @@
-# 🍽️ Zomato Homepage Clone
+# 🎨 In the Era of Cartoons — Responsive Card Gallery
 
-A frontend clone of Zomato's homepage built using **HTML5** and **CSS3** — no frameworks, no libraries (aside from Font Awesome icons).
+**Day 2/100 — 100 Days, 100 Projects Challenge**
+
+A fully responsive cartoon character card gallery built with pure CSS Grid — no media queries required.
 
 ---
 
 ## ✨ Features
-- Functional search bar UI
-- Filter, Pure Veg, and Cuisine selector buttons
-- "Inspiration for your first order" cuisine cards with hover animations
-- Custom fonts via `@font-face`
 
----
-
-## 🛠️ Built With
-- HTML5
-- CSS3 (Flexbox)
-- Font Awesome Icons
+- Fully responsive layout that reflows automatically across screen sizes
+- Built with `CSS Grid` using `repeat(auto-fit, minmax())` — zero breakpoints
+- Smooth hover animations on cards
+- Clean, mobile-first structure
 
 ---
 
 ## 🔗 Live
 
-https://zomato-homepage-clone.vercel.app/
+https://faq-updated-ecommercelandingpage.vercel.app/
 
 ---
 
 ## 📸 Preview
+
 ![Watch the demo](preview.gif)
 
 ---
 
-## 📚 What I Learned
-- Structuring flex-based navbars
-- Working with custom fonts and icon dropdowns
-- Building interactive hover states with pure CSS
+## 🛠️ Built With
+
+- HTML5
+- CSS3 (Grid, Flexbox, Transitions)
 
 ---
 
-## 🔗 Connect
-Feel free to fork, star ⭐, or reach out with feedback!
+## 💡 What I Learned
+
+`grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));` handled almost all of the responsive behavior on its own — a single line replaced what would normally take several media queries with Flexbox.
+
+---
+
+## 📅 Challenge Progress
+
+Part of my **100 Days, 100 Projects** challenge — building and documenting one project every day to sharpen front-end fundamentals and grow in public.
+
+---
+
+## 🤝 Connect
+ 
+⭐ If you found this useful, consider starring the repo!
