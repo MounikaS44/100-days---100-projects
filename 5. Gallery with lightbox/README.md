@@ -26,7 +26,7 @@ A responsive image gallery with a fully interactive lightbox — click any image
 
 ### 🚀 Live Demo
 
-🔗 Live Website: https://100-days-100-projects.vercel.app/
+🔗 Live Website: https://pixel-and-palette.vercel.app/
 
 ---
 
